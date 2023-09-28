@@ -6,26 +6,7 @@
 <body>
 <h1>Currency Conversion</h1>
 {{ form(form) }}
-{#<form method="post" action="{{ path('currency_exchange') }}">#}
-{#    <label for="from_currency">From Currency:</label>#}
-{#    <select name="from_currency" id="from_currency">#}
-{#        <option value="USD">USD</option>#}
-{#        <option value="EUR">EUR</option>#}
-{#        <!-- Add more currency options -->#}
-{#    </select>#}
-{#    <br>#}
-{#    <label for="to_currency">To Currency:</label>#}
-{#    <select name="to_currency" id="to_currency">#}
-{#        <option value="USD">USD</option>#}
-{#        <option value="EUR">EUR</option>#}
-{#        <!-- Add more currency options -->#}
-{#    </select>#}
-{#    <br>#}
-{#    <label for="amount">Amount:</label>#}
-{#    <input type="text" name="amount" id="amount">#}
-{#    <br>#}
-{#    <button type="submit">Convert</button>#}
-{#</form>#}
+
 {% if result|default(null) %}
     <p>Result: {{ result }}</p>
     <p>Exchange Rate Updated At: {{ updatedAt }}</p>
